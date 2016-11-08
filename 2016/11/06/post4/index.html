@@ -10,10 +10,7 @@
 
     <!--Description-->
     
-        <meta name="description" content="$(document).ready(function () {
-    var searchInput = $(&amp;apos;#tipue_search_input&amp;apos;);
-    searchInput.tipuesearch({
-        &amp;apos;mode&amp;apos;: &amp;apo">
+        <meta name="description" content="blah blah blah">
     
 
     <!--Author-->
@@ -114,7 +111,7 @@
 <script src="https://hypothes.is/embed.js" async></script>
 <section class="main clearfix">
 
-    <section class="top" style="background: url('/imgs/pic1.jpg');">
+    <section class="top" style="background: url('hexotest/imgs/pic1.jpg');">
         <div class="wrapper content_header clearfix">
             
 
@@ -143,34 +140,7 @@
             
 
             <!-- Content -->
-            <p><link href="/tipuesearch/tipuesearch.css" rel="stylesheet"></p>
-<p><script src="/tipuesearch/tipuesearch_set.js"></script></p>
-<p><script src="/tipuesearch/tipuesearch.js"></script><br><!-- Other code may be here --></p>
-<p><script><br>    $(document).ready(function () {</p>
-<pre><code>    var searchInput = $(&apos;#tipue_search_input&apos;);
-    searchInput.tipuesearch({
-        &apos;mode&apos;: &apos;json&apos;,
-        &apos;minimumLength&apos;: 2,
-        &apos;contentLocation&apos;: &apos;/tipuesearch/tipuesearch_content.json&apos;,
-        highlightEveryTerm: true
-    });
-
-    $(&apos;#search-form&apos;).on(&apos;submit&apos;, function (e) {
-        e.preventDefault();
-        $(&apos;#tipue_search_content&apos;).show();
-        $(&apos;#content&apos;).hide();
-    });
-
-    searchInput.keyup(function () {
-        var length = $(this).val().length;
-        if (length &lt; 1) {
-            $(&apos;#tipue_search_content&apos;).hide();
-            $(&apos;#content&apos;).show();
-        }
-    });
-});
-</code></pre><p></script></p>
-<form id="search-form"><br>  <input type="text" name="q" id="tipue_search_input" autocomplete="off" required placeholder="Let's see what we can find." style="width:80%;"><br></form>
+            <p>blah blah blah</p>
 
 
             <!-- Tags -->
@@ -205,9 +175,9 @@
 <script src="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
 
 <!-- tipuesearch -->
-<link href="/tipuesearch/tipuesearch.css" rel="stylesheet">
-<script src="/tipuesearch/tipuesearch_set.js"></script>
-<script src="/tipuesearch/tipuesearch.js"></script>
+<link href="hexotest/tipuesearch/tipuesearch.css" rel="stylesheet">
+<script src="hexotest/tipuesearch/tipuesearch_set.js"></script>
+<script src="hexotest/tipuesearch/tipuesearch.js"></script>
 <!-- Other code may be here -->
 <script>
     $(document).ready(function () {
