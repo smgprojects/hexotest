@@ -10,11 +10,7 @@
 
     <!--Description-->
     
-        <meta name="description" content="$(document).ready(function () {
-        var searchInput = $(&#39;#tipue_search_input&#39;);
-        searchInput.tipuesearch({
-            &#39;mode&#39;: &#39;json&#39;,
-    ">
+        <meta name="description" content="">
     
 
     <!--Author-->
@@ -139,31 +135,8 @@
 <script src="/hexotest/tipuesearch/tipuesearch_set.js"></script>
 <script src="/hexotest/tipuesearch/tipuesearch.js"></script>
 
-<script>
-    $(document).ready(function () {
-        var searchInput = $('#tipue_search_input');
-        searchInput.tipuesearch({
-            'mode': 'json',
-            'minimumLength': 2,
-            'contentLocation': '/hexotest/tipuesearch/tipuesearch_content.json',
-            highlightEveryTerm: true
-        });
+<script src="/hexotest/js/search.js"></script>
 
-        $('#search-form').on('submit', function (e) {
-            e.preventDefault();
-            $('#tipue_search_content').show();
-            $('#content').hide();
-        });
-
-        searchInput.keyup(function () {
-            var length = $(this).val().length;
-            if (length < 1) {
-                $('#tipue_search_content').hide();
-                $('#content').show();
-            }
-        });
-    });
-</script>
 
 <p><form id="search-form"><br>      <input type="text" name="q" id="tipue_search_input" autocomplete="off" required placeholder="Let's see what we can find." style="width:80%;"><br>    </form></p>
 <div id="tipue_search_content"></div>
